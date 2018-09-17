@@ -24,3 +24,5 @@ RUN install2.r --error \
     selectr \
     caTools \
     tidyverse httr jsonlite googlesheets purrr snakecase
+
+ENTRYPOINT [ "/bin/bash", "-c" ]
