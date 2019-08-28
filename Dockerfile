@@ -17,6 +17,8 @@ RUN apt-get -y update && apt-get install -y \
     libssl-dev \
     lsb-release \
     libjpeg-dev \
+    cargo \
+    libglu1-mesa-dev freeglut3-dev mesa-common-dev \
     && R CMD javareconf \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/
