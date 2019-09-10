@@ -7,7 +7,7 @@ RUN echo "deb http://httpredir.debian.org/debian stretch main contrib non-free" 
     && echo "deb http://httpredir.debian.org/debian stretch-updates main contrib non-free" >> /etc/apt/sources.list \
     && echo "deb http://security.debian.org/ stretch/updates main contrib non-free" >> /etc/apt/sources.list \
     && echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | debconf-set-selections \
-    apt-get -y update && apt-get install -y \
+    && apt-get -y update && apt-get install -y \
     default-jdk \
     libxml2-dev \
     libcairo2-dev \
