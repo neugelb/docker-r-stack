@@ -42,7 +42,7 @@ RUN install2.r --error --deps TRUE \
     remotes \
     selectr \
     caTools \
-    tidyverse httr jsonlite googlesheets purrr snakecase lubridate scales readxl knitr zoo tinytex extrafont showtext kableExtra flextable xtable rmarkdown data.table \ 
+    tidyverse httr jsonlite googlesheets purrr snakecase lubridate scales readxl knitr zoo tinytex extrafont showtext kableExtra flextable xtable rmarkdown data.table xlsx \ 
     && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
 
 RUN R -e "install.packages('rJava')"
