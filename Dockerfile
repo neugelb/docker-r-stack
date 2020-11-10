@@ -42,7 +42,7 @@ RUN install2.r --error --deps TRUE \
     remotes \
     selectr \
     caTools \
-    tidyverse httr jsonlite googlesheets purrr snakecase lubridate scales readxl knitr zoo tinytex extrafont showtext kableExtra flextable xtable rmarkdown data.table xlsx \ 
+    tidyverse httr jsonlite googlesheets purrr snakecase lubridate scales readxl knitr zoo tinytex extrafont showtext kableExtra flextable xtable rmarkdown data.table xlsx openxlsx\ 
     && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
 
 RUN R -e "install.packages('rJava')"
@@ -50,4 +50,3 @@ RUN R -e "install.packages('rJava')"
 # make /opt/TinyTeX writable for all users to allow users to install new packages on the fly
 RUN chmod a+w -R /opt/TinyTeX
 RUN chmod a+w /usr/local/bin
-
